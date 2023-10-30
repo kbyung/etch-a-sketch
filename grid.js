@@ -10,9 +10,15 @@ function createGrid(size) {
             const cell = document.createElement('div');
             cell.classList.add('cell');
             row.appendChild(cell);
+
+            cell.addEventListener("mouseover", function() {
+                cell.style.cssText = 'background-color: black'
+            })
         }
     }
 }
+
+
 
 createGrid(16)
 
